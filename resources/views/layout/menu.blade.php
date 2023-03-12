@@ -7,7 +7,6 @@
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
-                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
          </li>
@@ -16,7 +15,6 @@
               <i class="nav-icon fa fa-users"></i>
               <p>
                 Profile
-                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
          </li>
@@ -25,7 +23,6 @@
               <i class="nav-icon fa fa-graduation-cap"></i>
               <p>
                 Pengalaman Kuliah
-                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
          </li>
@@ -34,7 +31,6 @@
               <i class="nav-icon fa  fa-book"></i>
               <p>
                 Mata Kuliah
-                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
          </li>

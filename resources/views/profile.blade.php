@@ -20,33 +20,36 @@
                                 <h5 class="card-title"><b>Biodata {{ $rfull_name }}</b></h5><br>
                                 <hr>
                                 <p class="card-text">
-                                    Nama Lengkap : {{ $rfull_name }} <br>
-                                    NIM : {{ $rnim }} <br>
-                                    Absen : {{ $rabsen }} <br>
+                                    Nama Lengkap    : {{ $rfull_name }} <br>
+                                    Nama Panggilan  : {{ $rname }} <br>
+                                    NIM             : {{ $rnim }} <br>
+                                    Absen           : {{ $rabsen }} <br>
                                     {{ $rbio }}
                                 </p>
                             </div>
                         </div>             
-                        <div class="card bg-" style="width:350px; background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);border-radius:10px">
+                        <div class="card bg-" style="width:350px; background: radial-gradient(circle at 10% 20%, rgb(248, 219, 219) 0%, rgb(229, 248, 250) 90%);border-radius:10px">
                             <div class="card-body">
                                 <h5 class="card-title"><b>Biodata {{ $sfull_name }}</b></h5><br>
                                 <hr>
                                 <p class="card-text">
-                                    Nama Lengkap : {{ $sfull_name }} <br>
-                                    NIM : {{ $snim }} <br>
-                                    Absen : {{ $sabsen }} <br>
+                                    Nama Lengkap    : {{ $sfull_name }} <br>
+                                    Nama Panggilan  : {{ $sname }} <br>
+                                    NIM             : {{ $snim }} <br>
+                                    Absen           : {{ $sabsen }} <br>
                                     {{ $sbio }}
                                 </p>
                             </div>
                         </div>    
-                        <div class="card bg-primary" style="width:350px;border-radius:10px">
+                        <div class="card" style="background: linear-gradient(109.6deg, rgb(251, 250, 225) 11.2%, rgb(206, 240, 185) 47.5%, rgb(100, 163, 111) 100.2%);border-radius:10px">
                             <div class="card-body">
                                 <h5 class="card-title"></b>Biodata {{ $zfull_name }}</b></h5><br>
                                 <hr>
                                 <p class="card-text">
-                                    Nama Lengkap : {{ $zfull_name }} <br>
-                                    NIM : {{ $znim }} <br>
-                                    Absen : {{ $zabsen }} <br>
+                                    Nama Lengkap    : {{ $zfull_name }} <br>
+                                    Nama Panggilan  : {{ $zname }} <br>
+                                    NIM             : {{ $znim }} <br>
+                                    Absen           : {{ $zabsen }} <br>
                                     {{ $zbio }}
                                 </p>
                             </div>
