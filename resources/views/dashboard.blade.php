@@ -1,6 +1,11 @@
 <script>
-  alert('Selamat Datang');
+  setTimeout(() => {
+    var config = <?php echo json_encode($alert); ?>;
+    alert(JSON.stringify(config))
+    }, 600);
 </script>
+
+
 
 @extends('layout.main')
 

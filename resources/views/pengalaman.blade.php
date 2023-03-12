@@ -12,15 +12,15 @@
                     <h4 style="font-weight: bold">Pengalaman Kuliah</h4>
                     <hr>
                     <h5 style="font-weight: bold">Pengalaman {{ $rfull_name }}</h5>
-                    Nama panggilan: {{ $rname }}  <br><br>
+                    Nama Panggilan: {{ $rname }}  <br><br>
                     {{ $rpengalaman }}<br><hr> <br>
 
                     <h5 style="font-weight: bold">Pengalaman {{ $sfull_name }}</h5>
-                    Nama panggilan: {{ $sname }} <br><br>
+                    Nama Panggilan: {{ $sname }} <br><br>
                     {{ $spengalaman }}<br><hr><br>
 
                     <h5 style="font-weight: bold">Pengalaman {{ $zfull_name }}</h5>
-                    Nama panggilan: {{ $zname }} <br><br>
+                    Nama Panggilan: {{ $zname }} <br><br>
                     {{ $zpengalaman }}<br> <br>
 
                     

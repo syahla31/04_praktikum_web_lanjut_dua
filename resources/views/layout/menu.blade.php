@@ -29,5 +29,14 @@
               </p>
             </a>
          </li>
+         <li class="nav-item">
+            <a href="{{ url('matkul') }}" class="nav-link">
+              <i class="nav-icon fa  fa-book"></i>
+              <p>
+                Mata Kuliah
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+         </li>
         </ul>
       </nav>
