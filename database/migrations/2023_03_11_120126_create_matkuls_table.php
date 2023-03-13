@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('NAMA MATA KULIAH', 50)->index();
             $table->integer('SKS');
             $table->integer('JAM');
-            $table->integer('SEM');
+            $table->integer('SEMESTER')->index();
         });
     }
 

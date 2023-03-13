@@ -2,6 +2,6 @@
 
 @section('isi')
 
-
+hi
 
 @section('isi')
