@@ -41,7 +41,7 @@
                                 </p>
                             </div>
                         </div>    
-                        <div class="card" style="background: linear-gradient(109.6deg, rgb(251, 250, 225) 11.2%, rgb(206, 240, 185) 47.5%, rgb(100, 163, 111) 100.2%);border-radius:10px">
+                        <div class="card" style="background: radial-gradient(848px at 10% 20%, rgba(174, 231, 165, 0.9) 0%, rgb(181, 205, 154) 90%);border-radius:10px">
                             <div class="card-body">
                                 <h5 class="card-title"></b>Biodata {{ $zfull_name }}</b></h5><br>
                                 <hr>

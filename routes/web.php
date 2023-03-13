@@ -22,6 +22,7 @@ Route::get('/dashboard', [DashboardController::class,'dashboard']);
 Route::get('/profile', [ProfileController::class,'profile']);
 Route::get('/profile/{$name}', [ProfileController::class,'profile']);
 Route::get('/pengalaman-kuliah', [PengalamanKuliahController::class,'pengalaman']);
+Route::get('/matkul', [MatkulController::class,'matkul']);
 
 Route::controller(LayoutController::class)->group(function (){
     Route::get('home', 'home');
