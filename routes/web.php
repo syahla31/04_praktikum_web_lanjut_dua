@@ -4,6 +4,7 @@ use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PengalamanKuliahController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MatkulController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +23,7 @@ Route::get('/dashboard', [DashboardController::class,'dashboard']);
 Route::get('/profile', [ProfileController::class,'profile']);
 Route::get('/profile/{$name}', [ProfileController::class,'profile']);
 Route::get('/pengalaman-kuliah', [PengalamanKuliahController::class,'pengalaman']);
-Route::get('/matkul', [MatkulController::class,'matkul']);
+Route::get('/matkul', [MatkulController::class,'index']);
 
 Route::controller(LayoutController::class)->group(function (){
     Route::get('home', 'home');
