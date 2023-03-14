@@ -1,16 +1,18 @@
 @extends('layout.main')
-
 @section('isi')
 <section class="content">
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
         <!-- Small boxes (Stat box) -->
-        <div class="small-box bg-light" style="width: 200px auto">
-            <div class="inner">
+            <div class="card-header">
                     <h4 style="font-weight: bold">Mata Kuliah</h4>
-                    <hr>
-                    <table border="1">
+            </div>
+            <div class="card-body">
+                    <table class="table table-bordered table-striped">
                         <tr>
-                            <th>ID</th>
+                            <th>NO</th>
                             <th>KODE MK</th>
                             <th>MATA KULIAH</th>
                             <th>SKS</th>
@@ -31,6 +33,9 @@
                     </table>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
     </div>
 </section>
 
