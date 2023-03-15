@@ -9,7 +9,11 @@ use App\Http\Requests\UpdateMatkulRequest;
 class MatkulController extends Controller
 {
     public function index(){
-        $matkuls = Matkul::paginate(8);
-        return view('matkul', compact('matkuls'));
+        return view('matkul', ['matkuls' => Matkul::index()]);
+    }
+
+    public function show($semester)
+    {
+        return view('matkul', ['matkuls' => Matkul::getBySemester($semester)]);
     }
 }

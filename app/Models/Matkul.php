@@ -7,5 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Matkul extends Model
 {
-    protected $table = 'matkuls';
+    use HasFactory;
+    public static function index()
+    {
+        return Matkul::paginate(8);
+    }
+    
+    public static function getBySemester($semester)
+    {
+        return Matkul::where('SEMESTER', $semester)
+            ->paginate(5);
+    }
 }
