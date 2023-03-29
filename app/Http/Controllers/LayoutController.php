@@ -1,16 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class LayoutController extends Controller
 {
     public function index(){
-        return View('layout.main');
+        $user = Auth::user();
+        return View('layout.main',['user'=>$user]);
     }
 
     public function home(){
-        return View('home');
+        $user = Auth::user();
+        return View('home',['user'=>$user]);
     }
 }

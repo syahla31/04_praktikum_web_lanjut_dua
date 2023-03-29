@@ -1,27 +1,30 @@
-@extends('layout.main')
+@extends('layouts.app')
 
-@section('judul')
-    Halaman home 
-@endsection
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
 
-@section('isi')
-<div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Selamat Datang jomss</h3>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
+                    {{ __('You are logged in!') }}
+
+                    <table class="table table-responsive">
+                        <tr><th>Username</th><th>:</th><td>{{ $user->username }}</td></tr>
+                        <tr><th>Name</th><th>:</th><td>{{ $user->name }}</td></tr>
+                        <tr><th>Email</th><th>:</th><td>{{ $user->email }}</td></tr>
+                        <tr><th>Create At</th><th>:</th><td>{{ $user->created_at }}</td></tr>
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-          halaman home
-        </div>
-        <!-- /.card-body -->
-        <!-- /.card-footer-->
+    </div>
 </div>
 @endsection

@@ -1,11 +1,13 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PengalamanKuliahController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MatkulController;
-use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,13 +19,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Auth::routes();
 Route::get('/', [LayoutController::class,'home']);
 Route::get('/dashboard', [DashboardController::class,'dashboard']);
 Route::get('/profile', [ProfileController::class,'profile']);
 Route::get('/profile/{$name}', [ProfileController::class,'profile']);
 Route::get('/pengalaman-kuliah', [PengalamanKuliahController::class,'pengalaman']);
 Route::get('/matkul', [MatkulController::class,'index']);
+Route::get('/matkul/{semester}', [PostController::class, 'show']);
 
 Route::controller(LayoutController::class)->group(function (){
     Route::get('home', 'home');
