@@ -7,7 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PengalamanKuliahController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MatkulController;
-
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +20,7 @@ use App\Http\Controllers\MatkulController;
 |
 */
 Auth::routes();
-Route::get('/', [LayoutController::class,'home']);
+Route::get('/', [HomeController::class,'index']);
 Route::get('/dashboard', [DashboardController::class,'dashboard']);
 Route::get('/profile', [ProfileController::class,'profile']);
 Route::get('/profile/{$name}', [ProfileController::class,'profile']);
@@ -29,6 +29,6 @@ Route::get('/matkul', [MatkulController::class,'index']);
 Route::get('/matkul/{semester}', [PostController::class, 'show']);
 
 Route::controller(LayoutController::class)->group(function (){
-    Route::get('home', 'home');
+    Route::get('home', 'index');
     Route::get('/layout/index', 'index');
 });
