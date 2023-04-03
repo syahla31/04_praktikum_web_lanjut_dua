@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PengalamanKuliahController extends Controller
 {
     public function pengalaman(){
-        
-        return view('pengalaman')
+        $user = Auth::user();
+
+        return view('pengalaman', ['user'=>$user])
             ->with('sfull_name', 'Syahla Syafiqah Fayra')
             ->with('sname', 'Syahla')
             ->with('spengalaman', '"Hidup adalah perjalanan, maka kita perlu jalan-jalan untuk hidup"')

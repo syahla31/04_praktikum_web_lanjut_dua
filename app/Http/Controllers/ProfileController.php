@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class ProfileController extends Controller
 {
     public function profile(){
-        
-        return view('profile')
+        $user = Auth::user();
+
+        return view('profile', ['user'=>$user])
             ->with('sfull_name', 'Syahla Syafiqah Fayra')
             ->with('sname', 'Syahla')
             ->with('snim', '2141720015')
